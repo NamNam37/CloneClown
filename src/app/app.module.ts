@@ -22,6 +22,7 @@ import { LogsTableComponent } from './components/logs-table/logs-table.component
 import { ConfigEditorSourceComponent } from './components/config-editor-source/config-editor-source.component';
 import { ConfigEditorDestComponent } from './components/config-editor-dest/config-editor-dest.component';
 import { ConfigEditorUsersComponent } from './components/config-editor-users/config-editor-users.component';
+import { UsersEditorTableComponent } from './components/users-editor-table/users-editor-table.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { ConfigEditorUsersComponent } from './components/config-editor-users/con
     ConfigEditorSourceComponent,
     ConfigEditorDestComponent,
     ConfigEditorUsersComponent,
+    UsersEditorTableComponent,
   ],
   imports: [
     BrowserModule,
