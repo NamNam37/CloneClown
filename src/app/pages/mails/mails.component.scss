@@ -1,0 +1,139 @@
+$bg: #2F50A4;
+
+.application {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    .menu {
+        background-color: black;
+        flex: 0 0 250px;
+        .menu-header {
+
+        display: flex;
+        flex-direction: row;
+        padding-inline: 10px;
+        justify-content: space-between;
+        color: white;
+        margin-top: 10px;
+        }
+
+        ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: block;
+            list-style: none;
+
+            a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+
+            &:hover {
+                color: #248AFF;
+            }
+            }
+        }
+        }
+    }
+
+    .header
+    {
+        padding: 15px;
+        background-color: darken($bg, 10%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .admin
+        {
+            display: flex;
+            flex-direction: row;
+            padding-right: 100px;
+            .pfp {
+                padding: 10px;
+            }
+            p {
+                margin: 0px;
+            }
+            #logout {
+                color: #ffea2a;
+            }
+        }
+    }
+    .content
+    {
+        background-color: $bg;
+        width: 100%;
+        color: white;
+        .main-content {
+            padding-left: 15px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            .email-input {
+                flex: 0 0 400px;
+                p {
+                    margin: 3px;
+                }
+                .form-control {
+                    vertical-align: middle;
+                    width: 50%;
+                    display: inline-block;
+                    margin-right: 7px;
+                }
+                #save
+                {
+                    margin-top: 110px;
+                }
+
+            }
+            .schedule {
+                flex: 0 0 300px;
+                margin-right: 300px;
+                background-color: #323640;
+                border-radius: 5px;
+                p {
+                    margin-top: 10px;
+                    text-align: center;
+                }
+                .schedule-content {
+                    .cron-inp {
+                        
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        input {
+                            width: 15%;
+                        }
+                    }
+                    .buttons {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding-inline: 10px;
+                    }
+                    .grid {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding-top: 10px;
+                        .grid-container {
+                            padding-left: 10px;
+                            display: grid;
+                            //row-gap: 10px;
+                            column-gap: 30px;
+                            grid-template-columns: auto auto;
+                        }
+                        .btn-group-vertical {
+                            flex: 0 0 35px;
+                            padding: 10px;
+                            padding-top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

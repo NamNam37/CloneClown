@@ -1,0 +1,16 @@
+table {
+    color: white;
+}
+.PC {
+    background-color: #323640;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px 10px 10px 0px;
+    .PC-inp {
+        display: flex;
+        flex-direction: row;
+    }
+    input {
+        width: auto;
+    }
+}

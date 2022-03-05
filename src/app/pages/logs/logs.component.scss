@@ -1,0 +1,98 @@
+$bg: #2F50A4;
+
+.application {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    .menu {
+        background-color: black;
+        flex: 0 0 250px;
+        .menu-header {
+
+        display: flex;
+        flex-direction: row;
+        padding-inline: 10px;
+        justify-content: space-between;
+        color: white;
+        margin-top: 10px;
+        }
+
+        ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: block;
+            list-style: none;
+
+            a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+
+            &:hover {
+                color: #248AFF;
+            }
+            }
+        }
+        }
+    }
+    .content
+    {
+    background-color: $bg;
+    width: 100%;
+    color: white;
+        .header
+        {
+            padding: 15px;
+            background-color: darken($bg, 10%);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .admin
+            {
+                display: flex;
+                flex-direction: row;
+                padding-right: 100px;
+                .pfp {
+                    padding: 10px;
+                }
+                p {
+                    margin: 0px;
+                }
+                #logout {
+                    color: #ffea2a;
+                }
+            }
+        }
+        .main-content {
+            padding-left: 15px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            .table-modifiers {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .filtering {
+                    display: flex;
+                    flex-direction: row;
+                    .dropdown {
+                        background-color: #6c757d;
+                        border-radius: 5px;
+                        margin-right: 30px;
+                        #dropdownMenuButton {
+                            color: white;
+                        }
+                    }
+                }
+                
+            }
+            #nav {
+                margin-top: 20px;
+            }
+        }
+    }
+}

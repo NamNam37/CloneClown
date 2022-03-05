@@ -1,0 +1,38 @@
+<div class="application">
+    <app-sidebar></app-sidebar>
+    <div class="content">
+        <div class="header">
+            <h1>Dashboard</h1>
+            <div class="admin">
+                <div class="pfp">
+                    <img src="http://cdn.onlinewebfonts.com/svg/img_401900.png" class="w3-display-topmiddle w3-container" height="50px;">
+                </div>
+                <div>
+                    <h5>Odin</h5>
+                    <button class="btn btn-secondary btn-sm" id="logout" routerLink="">logout</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="main-overview">
+                <div class="PCs" id="info-rect">
+                    <i class="fas fa-desktop"></i>
+                    <h6>Computers</h6>
+                    <p>Online: 36/45</p>
+                </div>
+                <div class="Configs" id="info-rect">
+                    <i class="fas fa-gears"></i>
+                    <h6>Configurations</h6>
+                    <p>Count: 23</p>
+                </div>
+                <div class="Logs" id="info-rect">
+                    <i class="fas fa-chart-line"></i>
+                    <h6>Logs</h6>
+                    <p>Count: 120</p>
+                    <p>98 successful - 22 failed</p>
+                </div>
+            </div>
+            <app-dashboard-errorlog-table></app-dashboard-errorlog-table>
+        </div>
+    </div>
+</div>

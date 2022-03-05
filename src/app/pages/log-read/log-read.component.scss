@@ -1,0 +1,29 @@
+$bg: #2F50A4;
+.application {
+    display: flex;
+    flex-direction: row;
+    background-color: $bg;
+    height: 100%;
+    color: white;
+    .content
+    {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        .Header-Bar {
+            background-color: darken($bg, 10%);
+        }
+        .Message {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            width: 40%;
+        }
+        #Close-btn {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            width: 10%;
+        }
+    }
+}

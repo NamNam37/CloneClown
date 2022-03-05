@@ -1,0 +1,52 @@
+$bg: #2F50A4;
+
+.application {
+    background-color: $bg;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    .content
+    {
+        width: 100%;
+        .header
+        {
+            padding: 15px;
+            background-color: darken($bg, 10%);
+        }
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            margin-left: 50px;
+            .main-inputs-column {
+                flex: 0 0 400px;
+                .name {
+                    margin-top: 10px;
+                }
+                .config {
+                    margin-top: 10px;
+
+                    .config-btn {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+            .table-column {
+                margin-left: 100px;
+                flex: 0 0 500px;
+                .table-responsive {
+                    table {
+                        color: white;
+                    }
+                }
+                .save-btn {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-top: 50px;
+                }
+            }
+        }
+    }
+}

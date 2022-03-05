@@ -1,0 +1,73 @@
+<div class="application">
+    <app-sidebar></app-sidebar>
+    <div class="content">
+        <div class="header">
+            <h1>Admins PC</h1>
+        </div>
+        <div class="main-content">
+            <div class="main-inputs-column">
+                <div class="name">
+                    <label>PC Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="config">
+                    <label>Add Config: </label>
+                    <input type="text" class="form-control">
+                    <div class="config-btn">
+                        <button type="button" class="btn btn-secondary">Name Check</button>
+                        <button type="button" class="btn btn-secondary" routerLink="/configs/config-editor">Create New Configuration</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table-column">
+                <div class="table-responsive">
+                    <table class="table align-items-center mb-0">
+                        <thead>
+                            <tr>
+                                <th>Configuration</th>
+                                <th>Schedule</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Nouze</p>
+                                </td>
+                                <td>
+                                    <p>22:00</p>
+                                </td>
+                                <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-secondary">Edit</button>
+                                        <button type="button" class="btn btn-secondary">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Admins backup</p>
+                                </td>
+                                <td>
+                                    <p>13:30</p>
+                                </td>
+                                <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-secondary">Edit</button>
+                                        <button type="button" class="btn btn-secondary">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>    
+                <div class="save-btn">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary" routerLink="/users">Cancel</button>
+                        <button type="button" class="btn btn-secondary" routerLink="/users">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="application">
+    <app-sidebar></app-sidebar>
+    <div class="content">
+        <div class="header">
+            <h1>Logs</h1>
+            <div class="admin">
+                <div class="pfp">
+                    <img src="http://cdn.onlinewebfonts.com/svg/img_401900.png" class="w3-display-topmiddle w3-container" height="50px;">
+                </div>
+                <div>
+                    <h5>Odin</h5>
+                    <button class="btn btn-secondary btn-sm" id="logout" routerLink="">logout</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="table-modifiers">
+                <button class="btn btn-secondary">Delete All Logs</button>
+                
+                <div class="filtering">
+                    <div class="dropdown">
+                        <button class="btn bg-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filter by
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Show all</a></li>
+                        <li><a class="dropdown-item" href="#">Last used less than 7 days ago</a></li>
+                        <li><a class="dropdown-item" href="#">Only failures</a></li>
+                        <li><a class="dropdown-item" href="#">Only successful</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" class="form-control">
+                    <button class="btn btn-secondary">search</button>   
+                </div> 
+            </div>
+            <app-logs-table></app-logs-table>
+            <ul class="pagination pagination-info" id="nav">
+                <li class="page-item active">
+                    <a class="page-link" href="#link">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#link">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#link">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#link">4</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#link">5</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

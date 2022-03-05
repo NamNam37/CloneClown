@@ -1,0 +1,61 @@
+<div class="application">
+    <app-sidebar></app-sidebar>
+    <div class="content">
+        <div class="header">
+            <h1>Mail Notification</h1>
+            <div class="admin">
+                <div class="pfp">
+                    <img src="http://cdn.onlinewebfonts.com/svg/img_401900.png" class="w3-display-topmiddle w3-container" height="50px;">
+                </div>
+                <div>
+                    <h5>Odin</h5>
+                    <button class="btn btn-secondary btn-sm" id="logout" routerLink="">logout</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="email-input">
+                <h6>Email:</h6>
+                <input type="email" class="form-control">
+                <button class="btn btn-secondary">test email</button>
+                <div class="included-logs">
+                    <input type="checkbox" id="error">
+                    <label for="error">error backup</label>
+                    <br>
+                    <input type="checkbox" id="success">
+                    <label for="success">success backup</label>
+                </div>
+                <button class="btn btn-secondary" id="save">save</button>
+            </div>
+            <div class="schedule">
+                <p>Report email schedule</p>
+                <div class="schedule-content">
+                    <div class="cron-inp">
+                        <input type="text" size="1" class="form-control">
+                        <input type="text" size="1" class="form-control">
+                        <input type="text" size="1" class="form-control">
+                        <input type="text" size="1" class="form-control">
+                        <input type="text" size="1" class="form-control">
+                    </div>
+                    <p>"At 22:00"</p>
+                    <div class="buttons">
+                        <button class="btn btn-secondary">basic</button>
+                        <button class="btn btn-secondary">advanced</button>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-container">
+                            <div class="grid-item">Monday - Friday</div>
+                            <div class="grid-item">Every hour</div>
+                            <div class="grid-item">5th of January</div>
+                            <div class="grid-item"></div>
+                        </div>
+                        <div class="btn-group-vertical">  
+                            <button class="btn btn-secondary btn-sm">+</button>
+                            <button class="btn btn-secondary btn-sm">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+table {
+    color: white;
+}
+input {
+    width: 40%;
+}
+.dest {
+    margin: 0px 10px 10px 0px;
+    background-color: #323640;
+    border-radius: 5px;
+    padding: 10px;
+    .local {
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,44 @@
+$bg: #2F50A4;
+
+.application
+{
+    background-color: $bg;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    
+    #username
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 300px;
+    }
+    .password
+    {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        #password {
+            margin-left: auto;
+            width: 230px;
+        }
+        #login {
+            width: 70px;
+            margin-right: auto;
+            background-color: white;
+
+        }
+        .btn-default:hover
+        {
+            border-color: #5cb85c;
+            border-width: 1px;
+        }
+    }
+    .remember-me {
+        margin-top: 10px;
+    }
+}

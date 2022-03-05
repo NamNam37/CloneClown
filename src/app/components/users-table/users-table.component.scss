@@ -1,0 +1,22 @@
+#table {
+    margin-top: 20px;
+    border-radius: 5px;
+    table {
+        color: white;
+        .online {
+            background-color: lime;
+            height: 20px;
+            width: 20px;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+        .offline {
+            background-color: red;
+            height: 20px;
+            width: 20px;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+    }
+
+}

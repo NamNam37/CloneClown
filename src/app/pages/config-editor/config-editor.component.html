@@ -1,0 +1,83 @@
+<div class="application">
+    <app-sidebar></app-sidebar>
+    <div class="content">
+        <div class="header">
+            <h1>Annual backup</h1>
+        </div>
+        <div class="main-content">
+            <div class="column1">
+                <div class="name">
+                    <label>Configuration Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="other">
+                    <div class="backup-type">
+                        <button class="btn bg-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Backup Type
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><p class="dropdown-item">Full</p></li>
+                            <li><p class="dropdown-item">Incremental</p></li>
+                            <li><p class="dropdown-item">Differencial</p></li>
+                        </ul>
+                    </div>
+                    <div class="split">
+                        <p>Split in</p>
+                        <input type="text" class="form-control">
+                        <p>folders</p>
+                    </div>
+                    <div class="size">
+                        <p>max folder size</p>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="ZIP">
+                        <input type="checkbox">
+                        <p>ZIP Compression</p>
+                    </div>
+                </div>
+                <app-config-editor-users></app-config-editor-users>
+            </div>
+            <div class="column2">
+                <app-config-editor-source></app-config-editor-source>
+                <app-config-editor-dest></app-config-editor-dest>
+            </div>
+            <div class="column3">
+                <div class="schedule">
+                    <p>Report email schedule</p>
+                    <div class="schedule-content">
+                        <div class="cron-inp">
+                            <input type="text" size="1" class="form-control">
+                            <input type="text" size="1" class="form-control">
+                            <input type="text" size="1" class="form-control">
+                            <input type="text" size="1" class="form-control">
+                            <input type="text" size="1" class="form-control">
+                        </div>
+                        <p>"At 22:00"</p>
+                        <div class="buttons">
+                            <button class="btn btn-secondary">basic</button>
+                            <button class="btn btn-secondary">advanced</button>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-container">
+                                <div class="grid-item">Monday - Friday</div>
+                                <div class="grid-item">Every hour</div>
+                                <div class="grid-item">5th of January</div>
+                                <div class="grid-item"></div>
+                            </div>
+                            <div class="btn-group-vertical">  
+                                <button class="btn btn-secondary btn-sm">+</button>
+                                <button class="btn btn-secondary btn-sm">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="save-btn">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary" routerLink="/configs">Cancel</button>
+                        <button type="button" class="btn btn-secondary" routerLink="/configs">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
