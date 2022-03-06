@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserVerifyComponent } from './user-verify.component';
+import { FtpModalComponent } from './ftp-modal.component';
 
-describe('UserVerifyComponent', () => {
-  let component: UserVerifyComponent;
-  let fixture: ComponentFixture<UserVerifyComponent>;
+describe('FtpModalComponent', () => {
+  let component: FtpModalComponent;
+  let fixture: ComponentFixture<FtpModalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UserVerifyComponent ]
+      declarations: [ FtpModalComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UserVerifyComponent);
+    fixture = TestBed.createComponent(FtpModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

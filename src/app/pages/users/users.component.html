@@ -15,7 +15,7 @@
         </div>
         <div class="main-content">
             <div class="table-modifiers">
-                <button type="button" class="btn btn-secondary" id="verify" routerLink="/users/user-verify">Verify New Users</button>
+                <button type="button" class="btn btn-secondary" id="verify" data-bs-toggle="modal" data-bs-target="#verifyModal">Verify New Users</button>
                 <div class="filtering">
                     <div class="dropdown">
                         <button class="btn bg-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,3 +52,4 @@
         </div>
     </div>
 </div>
+<app-user-verify-modal></app-user-verify-modal>

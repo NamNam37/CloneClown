@@ -4,7 +4,6 @@ import {LoginComponent} from './pages/login/login.component';
 import {DashboardComponent} from "./pages/dashboard/dashboard.component";
 import {UsersComponent} from "./pages/users/users.component";
 import {UserEditorComponent} from "./pages/user-editor/user-editor.component";
-import {UserVerifyComponent} from "./pages/user-verify/user-verify.component";
 import {ConfigsComponent} from "./pages/configs/configs.component";
 import {ConfigEditorComponent} from "./pages/config-editor/config-editor.component";
 import {FtpComponent} from "./pages/ftp/ftp.component";
@@ -16,7 +15,6 @@ const routes: Routes = [
   { path: '', component: LoginComponent},
   { path: 'dashboard', component: DashboardComponent },
   { path: 'users', component: UsersComponent },
-  { path: 'users/user-verify', component: UserVerifyComponent },
   { path: 'users/user-editor', component: UserEditorComponent },
   { path: 'configs', component: ConfigsComponent },
   { path: 'configs/config-editor', component: ConfigEditorComponent },

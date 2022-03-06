@@ -12,7 +12,6 @@ import { LoginComponent } from './pages/login/login.component';
 import { LogReadComponent } from './pages/log-read/log-read.component';
 import { ConfigEditorComponent } from './pages/config-editor/config-editor.component';
 import { UserEditorComponent } from './pages/user-editor/user-editor.component';
-import { UserVerifyComponent } from './pages/user-verify/user-verify.component';
 import { FtpComponent } from './pages/ftp/ftp.component';
 import { UsersTableComponent } from './components/users-table/users-table.component';
 import { ConfigsTableComponent } from './components/configs-table/configs-table.component';
@@ -23,6 +22,9 @@ import { ConfigEditorSourceComponent } from './components/config-editor-source/c
 import { ConfigEditorDestComponent } from './components/config-editor-dest/config-editor-dest.component';
 import { ConfigEditorUsersComponent } from './components/config-editor-users/config-editor-users.component';
 import { UsersEditorTableComponent } from './components/users-editor-table/users-editor-table.component';
+import { UserVerifyModalComponent } from './components/user-verify-modal/user-verify-modal.component';
+import { FtpModalComponent } from './components/ftp-modal/ftp-modal.component';
+import { UserVerifyModalTableComponent } from './components/user-verify-modal-table/user-verify-modal-table.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,6 @@ import { UsersEditorTableComponent } from './components/users-editor-table/users
     LogReadComponent,
     ConfigEditorComponent,
     UserEditorComponent,
-    UserVerifyComponent,
     FtpComponent,
     UsersTableComponent,
     ConfigsTableComponent,
@@ -47,6 +48,9 @@ import { UsersEditorTableComponent } from './components/users-editor-table/users
     ConfigEditorDestComponent,
     ConfigEditorUsersComponent,
     UsersEditorTableComponent,
+    UserVerifyModalComponent,
+    FtpModalComponent,
+    UserVerifyModalTableComponent,
   ],
   imports: [
     BrowserModule,
