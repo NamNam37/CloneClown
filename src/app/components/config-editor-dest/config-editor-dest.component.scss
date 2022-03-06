@@ -5,11 +5,20 @@ input {
     width: 40%;
 }
 .dest {
-    margin: 0px 10px 10px 0px;
+    margin: 20px 0px 20px 0px;
     background-color: #323640;
     border-radius: 5px;
     padding: 10px;
+    height: 300px;
+    .table-dest {
+        margin-top: 10px;
+        height: 160px;
+        overflow-y: auto;
+    }
     .local {
+        .form-control {
+            width: 165px;
+        }
         display: flex;
         flex-direction: row;
     }

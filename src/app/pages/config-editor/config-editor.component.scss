@@ -25,36 +25,40 @@ $bg: #2F50A4;
             margin-left: 50px;
             .column1 {
                 flex: 0 0 300px;
-                .name {
-                    margin: 0px 10px 10px 0px;
+                .basic {
+                    height: 270px;
+                    margin: 20px 0px 20px 0px;
                     background-color: #323640;
                     border-radius: 5px;
                     padding: 10px;
-                    input {
-                        width: 100%;
-                    }
-                }
-                .other {
-                    margin: 0px 10px 10px 0px;
-                    background-color: #323640;
-                    border-radius: 5px;
-                    padding: 10px;
-                    .split {
-                        padding-top: 10px;
+                    #name {
+                        padding: 5px 0px 5px 0px;
                         display: flex;
                         flex-direction: row;
                         align-items: baseline;
-                        input {
-                            width: 50px;
-                        }
+                        width: 220px;
                     }
-                    .size {
-                        padding-top: 10px;
+                    .backup-type {
+                        padding: 5px 0px 5px 0px;
+                    }
+                    .split {
+                        padding: 5px 0px 5px 0px;
                         display: flex;
                         flex-direction: row;
                         align-items: baseline;
                         input {
                             width: 100px;
+                            margin-inline: 10px;
+                        }
+                    }
+                    .size {
+                        padding: 5px 0px 5px 0px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: baseline;
+                        input {
+                            width: 100px;
+                            margin-inline: 10px;
                         }
                     }
                     .ZIP {
@@ -63,6 +67,7 @@ $bg: #2F50A4;
                         align-items: baseline;
                         input {
                             width: auto;
+                            margin-inline: 10px;
                         }
                     }
                 }
