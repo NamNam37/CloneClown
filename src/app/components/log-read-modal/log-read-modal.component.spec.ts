@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FtpComponent } from './ftp.component';
+import { LogReadModalComponent } from './log-read-modal.component';
 
-describe('FtpComponent', () => {
-  let component: FtpComponent;
-  let fixture: ComponentFixture<FtpComponent>;
+describe('LogReadModalComponent', () => {
+  let component: LogReadModalComponent;
+  let fixture: ComponentFixture<LogReadModalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FtpComponent ]
+      declarations: [ LogReadModalComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FtpComponent);
+    fixture = TestBed.createComponent(LogReadModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

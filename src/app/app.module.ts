@@ -9,10 +9,8 @@ import { ConfigsComponent } from './pages/configs/configs.component';
 import { LogsComponent } from './pages/logs/logs.component';
 import { MailsComponent } from './pages/mails/mails.component';
 import { LoginComponent } from './pages/login/login.component';
-import { LogReadComponent } from './pages/log-read/log-read.component';
 import { ConfigEditorComponent } from './pages/config-editor/config-editor.component';
 import { UserEditorComponent } from './pages/user-editor/user-editor.component';
-import { FtpComponent } from './pages/ftp/ftp.component';
 import { UsersTableComponent } from './components/users-table/users-table.component';
 import { ConfigsTableComponent } from './components/configs-table/configs-table.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -25,6 +23,9 @@ import { UsersEditorTableComponent } from './components/users-editor-table/users
 import { UserVerifyModalComponent } from './components/user-verify-modal/user-verify-modal.component';
 import { FtpModalComponent } from './components/ftp-modal/ftp-modal.component';
 import { UserVerifyModalTableComponent } from './components/user-verify-modal-table/user-verify-modal-table.component';
+import { ScheduleComponent } from './components/schedule/schedule.component';
+import { LogReadModalComponent } from './components/log-read-modal/log-read-modal.component';
+import { LogsDeleteAllModalComponent } from './components/logs-delete-all-modal/logs-delete-all-modal.component';
 
 @NgModule({
   declarations: [
@@ -35,10 +36,8 @@ import { UserVerifyModalTableComponent } from './components/user-verify-modal-ta
     LogsComponent,
     MailsComponent,
     LoginComponent,
-    LogReadComponent,
     ConfigEditorComponent,
     UserEditorComponent,
-    FtpComponent,
     UsersTableComponent,
     ConfigsTableComponent,
     SidebarComponent,
@@ -51,6 +50,9 @@ import { UserVerifyModalTableComponent } from './components/user-verify-modal-ta
     UserVerifyModalComponent,
     FtpModalComponent,
     UserVerifyModalTableComponent,
+    ScheduleComponent,
+    LogReadModalComponent,
+    LogsDeleteAllModalComponent,
   ],
   imports: [
     BrowserModule,
