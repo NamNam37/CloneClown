@@ -4,7 +4,7 @@
         <input type="text" class="form-control">
         <button class="btn btn-secondary">Add</button>
     </div>
-    <button class="btn btn-secondary" routerLink="/configs/config-editor/ftp">FTP</button>
+    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#ftpModal">FTP</button>
 
     <div class="table-dest">
         <table class="table align-items-center mb-0">
@@ -33,5 +33,6 @@
                 </tr>
             </tbody>
         </table>
-    </div>  
+    </div> 
 </div>
+<app-ftp-modal></app-ftp-modal>
