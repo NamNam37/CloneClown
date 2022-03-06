@@ -42,35 +42,7 @@
                 <app-config-editor-dest></app-config-editor-dest>
             </div>
             <div class="column3">
-                <div class="schedule">
-                    <p>Report email schedule</p>
-                    <div class="schedule-content">
-                        <div class="cron-inp">
-                            <input type="text" size="1" class="form-control">
-                            <input type="text" size="1" class="form-control">
-                            <input type="text" size="1" class="form-control">
-                            <input type="text" size="1" class="form-control">
-                            <input type="text" size="1" class="form-control">
-                        </div>
-                        <p>"At 22:00"</p>
-                        <div class="buttons">
-                            <button class="btn btn-secondary">basic</button>
-                            <button class="btn btn-secondary">advanced</button>
-                        </div>
-                        <div class="grid">
-                            <div class="grid-container">
-                                <div class="grid-item">Monday - Friday</div>
-                                <div class="grid-item">Every hour</div>
-                                <div class="grid-item">5th of January</div>
-                                <div class="grid-item"></div>
-                            </div>
-                            <div class="btn-group-vertical">  
-                                <button class="btn btn-secondary btn-sm">+</button>
-                                <button class="btn btn-secondary btn-sm">-</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <app-schedule></app-schedule>
                 <div class="save-btn">
                     <div class="btn-group">
                         <button type="button" class="btn btn-secondary" routerLink="/configs">Cancel</button>

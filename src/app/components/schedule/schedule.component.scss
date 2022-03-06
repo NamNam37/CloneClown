@@ -1,0 +1,44 @@
+.schedule {
+    width: 300px;
+    background-color: #323640;
+    border-radius: 5px;
+    p {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .schedule-content {
+        .cron-inp {
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            input {
+                width: 15%;
+            }
+        }
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-inline: 10px;
+        }
+        .grid {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 10px;
+            .grid-container {
+                padding-left: 10px;
+                display: grid;
+                //row-gap: 10px;
+                column-gap: 30px;
+                grid-template-columns: auto auto;
+            }
+            .btn-group-vertical {
+                flex: 0 0 35px;
+                padding: 10px;
+                padding-top: 0px;
+            }
+        }
+    }
+}
