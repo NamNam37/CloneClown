@@ -6,8 +6,7 @@ $bg: white;
     height: 100%;
     .content
     {
-
-        background-color: $bg;
+        background-color: darken($bg, 3%);
         width: 100%;
         .header
         {
@@ -16,20 +15,26 @@ $bg: white;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            h1 {
+                margin: 0px;
+            }
+            h3 {
+                margin-bottom: 0px;
+            }
             .admin
             {
                 display: flex;
                 flex-direction: row;
                 padding-right: 100px;
-                .pfp {
-                    padding: 10px;
-                }
-                p {
-                    margin: 0px;
+                a {
+                    text-decoration: none;
+                    color: #323640;
                 }
                 #logout {
-                    color: #ffea2a;
+                    padding-left: 30px;
+                    color: rgb(139, 0, 0);
                 }
+                
             }
         }
         .main-content {
@@ -43,7 +48,10 @@ $bg: white;
                 flex-direction: row;
                 justify-content: space-between;
                 #PCs {
-                    margin-left: 20px;
+                    margin-left: 10px;
+                    i {
+                        font-size: 32px;
+                    }
                 }
                 .card {
                     width: 250px;
